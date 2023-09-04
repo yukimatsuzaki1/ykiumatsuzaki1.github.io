@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <h1>DIG FND19 Plasentation</h1>
+    </div>
+    <div>
+        <h2>オブジェクトとfor inループ活用事例</h2>
+    </div>
+    <div class="main-box1">
+        <ul>
+            //javascript <br>
+            const info = {<br>
+                name: "名前 松崎 祐樹",<br>
+                age: "年齢 32",<br>
+                business:"業務 生産管理業務",<br>
+                hobby:"趣味 ドライブ",<br>
+            };<br>
+            //HTMLの情報を入れるIDを関数へ置き換え <br>
+            const infooutput = document.getElementById("info-output");<br>
+            let img = document.querySelector("img");<br>
+            関数<br>
+            function infoCheck(){<br>
+                let Value = "~自己紹介~";<br>
+                img.src = "86.jpg";<br>
+                img.style.display = "block";<br>
+                  for(const key in info){<br>
+                    Value += `\n ${info[key]}`;<br>
+                    infooutput.innerText = Value;<br>    
+                  }<br>
+                }<br>
+            const pushButton = document.getElementById("btn1");<br>
+            pushButton.addEventListener("click",infoCheck);<br>
+        </ul>
+    </div>
+
+    <div class="main-box2">
+        <ul>
+            <p id="info-1">
+                <!-- <h2>自己紹介</h2> -->
+                <h2 id = "info-output"></h2>
+                <!-- <h2 id = "age">age: 32</h2>
+                <h2 id = "business">business: 生産管理業務</h2>
+                <h2 id = "hobby">hobby: ドライブ</h2>
+                <h2 id = "learning">learning: 考え中</h2> -->
+                <img src="" alt="img">                             
+            </p>
+        </ul>
+    </div>
+    <table>
+        <tr>
+            <th> <button id="btn1">松崎</button></th>
+            <th> <button id="btn2">スプラちゃん</button></th>
+        </tr>
+    </table>
+    <a href=C:\Users\1471375\Desktop\dig-foundations\presentation\index1.html>Top</a>            
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
