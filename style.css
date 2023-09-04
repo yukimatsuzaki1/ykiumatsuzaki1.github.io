@@ -1,7 +1,88 @@
 h1{
+    text-align: center;
+    background: greenyellow;
+    height: 50px;
+    padding: 20px 0;
+}
+.sub-box{
+    background:orange;
+}
+.coment{
+    color:rgb(54, 255, 47);
+}
+span{
     color: yellow;
 }
+.main-box1{
+    float: left;
+    background:black;
+    color: azure;
+    width: 50%;
+    height:550px;
+    /* overflow:visible; */
 
-div{
-   background-color: black; 
+}
+.main-box2{
+    float: right;
+    background:olivedrab;
+    color: azure;
+    width: 50%;
+    height: 550px;
+   padding: auto;
+}
+.main-box3{
+    float: left;
+    background:black;
+    color: azure;
+    width: 50%;
+    height:600px;
+    /* overflow:visible; */
+}
+.main-box4{
+    float: right;
+    background:black;
+    color: azure;
+    width: 50%;
+    height:600px;
+    /* overflow:visible; */
+}
+
+
+table{
+    /* position: absolute; */
+    /* float: left; */
+    float: right;
+	bottom: 0;
+    height: 50px;
+    width: 50%;
+    border-collapse: collapse;    
+}
+/* table,th,td{
+    /* border: 1px solid black; */ 
+/* } */ 
+
+button{
+
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color:black;
+    color: azure;
+    font-size: 15px;
+    box-shadow: 2px 2px 0 2px gray;
+}
+
+#info-output{
+    float: left;
+    margin-top:40px;
+    line-height: 2;
+    width: 50%;
+}
+img{
+    float: right;
+    margin-top: 100px;
+    margin-right: 50px;
+    width: 200px;
+    height: 150px;
+    display:none;
 }
