@@ -52,8 +52,8 @@ let img = document.querySelector("img");
 
 function infoCheck(){
 let Value = "~自己紹介~";
-img.src = "86.png";
-img.style.display = "block";
+// img.src = "86.png";
+// img.style.display = "block";
 for(const key in info){
     Value += `\n ${info[key]}`;
     infooutput.innerText = Value;    
@@ -62,8 +62,8 @@ for(const key in info){
 
 function supuraInfoCheck(){
   let Value = "~自己紹介~";
-  img.src = "スプラちゃん.png";
-  img.style.display = "block";
+  // img.src = "スプラちゃん.png";
+  // img.style.display = "block";
     for(const key in supuraInfo){
       Value += `\n ${supuraInfo[key]}`;
       infooutput.innerText = Value;    
