@@ -25,14 +25,14 @@ const info = {
     name: "名前 松崎 祐樹",
     age: "年齢 32",
     business:"業務 生産管理業務",
-    hobby:"趣味 ドライブ",
+    hobby:"趣味 ドライブ🚗",
 };
 
 const supuraInfo = {
       Name: "名前 スプラちゃん",
       age: "年齢 ひみつ💕",
       business:"業務 課のマスコット",
-      hobby: "趣味 映え",
+      hobby: "趣味 職場を映えさせること😘",
 };
 
 
@@ -47,7 +47,7 @@ const infooutput = document.getElementById("info-output");
 // const learning = document.getElementById("learning");
 // console.log(learning.innerText);
 let img = document.querySelector("img");
-
+const last = document.getElementById("last-coment");
 
 
 function infoCheck(){
@@ -71,11 +71,18 @@ function supuraInfoCheck(){
 }
 // infoCheck();
 
+function lastComent(){
+  last.style.display = "block";
+}
+
 const pushButton = document.getElementById("btn1");
 pushButton.addEventListener("click",infoCheck);
 
 const pushButtonTwo = document.getElementById("btn2");
 pushButtonTwo.addEventListener("click",supuraInfoCheck);
+
+const pushButtonTree = document.getElementById("btn3");
+pushButtonTree.addEventListener("click",lastComent);
 
     // if(JSON.stringify(key) == JSON.stringify(name)){
     // }else if(key === age){
