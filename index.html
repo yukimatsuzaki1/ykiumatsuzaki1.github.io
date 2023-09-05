@@ -17,9 +17,9 @@
     </div>
     <div class ="sub-box">
         <ul>
-            <h3>-選定理由-</h3>
-            <h3>1.これまで学んできたことの組み合わせでオブジェクトを理解するのに苦戦した。</h3>
-            <h3>2.今後、生産管理業務でシステムDBからの情報取得に活かせそうなポイントと感じた。</h3>
+            <h2>-選定理由-</h2>
+            <h2>1.オブジェクトを理解するのに苦戦した。</h2>
+            <h2>2.自業務でシステムDBからの情報取得に活かせそうと感じた。</h2>
         </ul>
     </div>
     
@@ -27,40 +27,39 @@
         
     <div class="main-box3">
         <ul>
-            <h2>オブジェクト</h2>
-            <h2>どのような種類の値でも格納できるもの</h2>
-            <p class="coment">具体的には、数値・文字列・ブーリアン（真偽値）など</p>
-            <h2>const info = <span>{</span> name: "松崎 祐樹", age: "32" <span>}</span>;</h2>
-         
-            <!-- <p>constで変数宣言 今回は紹介の情報なので 変数名introduction</p> -->
-            <p class="coment">オブジェクトは<span>{}</span>中括弧で周りを囲む</p>
-            <p class="coment">中身は、（キー：値） ペアとなっていて、,で区切り複数の情報を格納できる</p>
-            <p class="coment">オブジェクトの値へのアクセスの仕方(取出し方)</p>
-            <p class="coment">ブラケット記法</p>
-            <p class="coment">info[name] と記述すると "松崎 祐樹" が取り出せる</p>
-            <p class="coment">info[age] と記述すると "32" が取り出せる</p>
+            <h2>★オブジェクトとは</h2>
+            <h2>どのような種類の値でも格納できる箱のようなもの</h2>
+            <!-- <p class="coment">具体的には、数値・文字列・ブーリアン（真偽値）など</p> -->
+            <h2 class="coment">//<span>{}</span>中括弧で周りを囲まれたもの</h2 >
+            <h2>const info = <span>{</span><span class="pink">name</span>: <span class="skybule">"松崎 祐樹"</span><span class="red">,</span> <span class="pink">age</span>:<span class="skybule"> "32" </span><span>}</span>;</h2>         
+            <!-- <h3>constで変数宣言 今回は紹介の情報なので 変数名introduction</h3 > -->
+            <h2  class="coment">//<span>（<span class="pink"> キー </span>:<span class="skybule"> 値 </span>） ペア</span>となっていて<span class="red">,</span> 区切りで複数の情報を格納可</h2>
+            <!-- <h2  class="coment">//オブジェクトの値へのアクセスの仕方(取出し方)</h2> -->
+            <h2  class="coment">//ブラケット記法で値を取り出せます。</h2 >
+            <h2>info[<span class="pink">name</span>]</h2> 
+            <h2  class="coment">//と記述すると <span class="skybule">"松崎 祐樹"</span> が取り出せる</h2 >
+            <!-- <h2  class="coment">//info[age] と記述すると "32" が取り出せる</h2 > -->
         </ul>
     </div>
         <div class="main-box4">
-            <ul><h2>for in ループ</h2>
-                <h2>オブジェクトの各要素にアクセス(取得)できる</h2>
-              
-                <h2>const info = { name: "松崎 祐樹", age: "32" };</h2>
-                <h2>for (const Key in info){</h2>
-                <p class="coment">//変数infoの中のkeyを取得を繰り返す</p>
-                <h2>const value = info[key]</h2>
-                <p class="coment">//変数valueを作成し、ブラケット記法で値を取得 </p>
-                <p class="coment">1回目 info[name] は "松崎 祐樹" を取得 </p>
-                <p class="coment">2回目 info[age] は "32" を取得 </p>
-                <h2>console.log(value);</h2>
-
+            <ul><h2>★<span>for in</span> ループ</h2>
+                <h2>オブジェクトの各要素を取得できるもの</h2>
+                <h2 class="coment">//多くの情報が格納されていたら、毎回コードを記述するのは大変！</h2>
+                <h2>const info = <span>{</span><span class="pink">name</span>: <span class="skybule">"松崎 祐樹"</span><span class="red">,</span> <span class="pink">age</span>:<span class="skybule"> "32" </span><span>・・・・・・・・・・}</span>;</h2>  
+                <h2><span>for</span> (const<span class="pink"> Key </span><span>in</span> info){</h2>
+                <h2>const value = info[<span class="pink">key</span>]</h2>
+                <!-- <h2>console.log(value);</h2> -->
                 <h2>}</h2>
-                <p></p>
+                <h2 class="coment">//オブジェクト内をループして値を取得</h2>
+                <h2 class="coment">//1回目 info[name] <span class="skybule">"松崎 祐樹"</span> を取得 </h2>
+                <h2 class="coment">//2回目 info[age] は <span class="skybule">"32"</span> を取得 </h2>
+                <!-- <p class="coment">//変数infoの中のkeyを取得を繰り返す</p>
+                <p class="coment">//変数valueを作成し、ブラケット記法で値を取得 </p> -->
                 <!-- <p>constで変数宣言 今回は紹介の情報なので 変数名introduction</p> -->
 
             </ul>
         </div>
-        <a href=.\index2.html>Top</a>  
+        <a href=.\index2.html>Next</a>    
             
     <script type="text/javascript" src="script.js"></script>
 
